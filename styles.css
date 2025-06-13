@@ -1,0 +1,566 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #feedde;
+}
+
+header {
+    background-color: #769172;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 30px;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+.nav-links li {
+    margin-right: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #095944;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #feedde;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo a {
+    text-decoration: none;
+    color: #feedde;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons li {
+    margin-left: 25px;
+}
+
+.social-icons li a img {
+  width: 32px;
+  height: 32px;
+  transition: filter 0.3s;
+}
+
+.social-icons li a:hover img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(110%) contrast(108%);
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    height: 3px;
+    width: 25px;
+    background: #095944;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hamburger-menu:hover span {
+    background: #feedde;
+}
+
+.logo, .hamburger-menu {
+  z-index: 1001;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 50px 40px 50px;
+    background-color: #769172;
+    height: 135vh;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-text {
+    flex: 1;
+    position: relative;
+    top: -100px;
+    max-width: 600px;
+    text-align: center;
+    margin-right: 2%
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: #feedde;
+    margin: 0;
+    font-weight: 400;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin-left: 2%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: auto;
+    display: block;
+}
+
+/* Featured Works Section */
+.featured-works-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  background-color: #769172;
+}
+
+.section-heading {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px; /* Space between the heading and the gallery section */
+  color: #feedde; /* Adjust the color as needed */
+  font-weight: 500;
+}
+
+/* Gallery Section */
+.gallery-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  background-color: #769172;
+}
+
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  flex: 0 0 calc(50% - 40px); /* Two items per row with margin accounted for */
+  margin: 20px; /* Equal margin on all sides */
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.4s ease;
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #769172;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.gallery-item .overlay-text {
+  font-size: 28px;
+  color: #feedde;
+}
+
+.gallery-item:hover img {
+  opacity: 0;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #769172;
+}
+
+/* Subscribe Section */
+.subscribe-section {
+  padding: 60px 20px;
+  background-color: #769172;
+  text-align: center;
+}
+
+.subscribe-section h2 {
+  font-size: 28px;
+  color: #feedde;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.subscribe-section p {
+  font-size: 18px;
+  color: #feedde;
+  margin-bottom: 20px;
+}
+
+.subscribe-section form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subscribe-section input[type="email"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px 20px;
+  font-size: 18px;
+  border: 1px solid #feedde;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #feedde;
+  color: #095944;
+}
+
+.subscribe-section button[type="submit"] {
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #feedde;
+  background-color: #095944;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-section button[type="submit"]:hover {
+  background-color: #feedde;
+  color: #095944;
+}
+
+/* Footer */
+footer {
+  background-color: #769172;
+  color: #feedde;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Contact Page Specific Styles */
+.contact-page {
+  background-image: url('assets/ContactBackground.jpg'); /* Your background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.contact-page header {
+  background-color: transparent;
+}
+
+.contact-page .navbar {
+  background-color: transparent;
+}
+
+.contact-info {
+  background-color: transparent;
+  text-align: center;
+  color: #feedde; /* Change this to the color you want for the text */
+  padding: 300px 0px; /* This adds some space above and below the text */
+}
+
+.contact-info h3 {
+  font-weight: normal; /* This makes the text unbolded */
+  font-size: 20px;
+}
+
+.contact-details {
+  font-size: 45px; /* This makes the text larger */
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  height: 50px; /* Adjust this to change the size of the icon */
+  width: 50px; /* Adjust this to change the size of the icon */
+  margin-right: 10px; /* This adds some space to the right of the icon */
+  vertical-align: middle;
+}
+
+.contact-page .subscribe-section {
+  background-color: transparent;
+}
+
+.contact-page footer {
+  background-color: transparent;
+}
+
+/* Responsive styles */
+@media (max-width: 1000px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding: 35px 30px 60px 30px;
+    }
+
+    .navbar nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 65%;
+      background-color: #769172;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      display: none;
+      padding-top: 70px;
+    }
+
+    .navbar nav.active {
+      display: flex;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-links li {
+      margin: 20px 0;
+    }
+
+    .social-icons {
+      position: absolute;
+      bottom: 20px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .social-icons li {
+      margin: 0 10px;
+    }
+
+    .hamburger-menu {
+      display: flex;
+      position: absolute;
+      right: 30px;
+      top: 35px;
+    }
+
+    .logo {
+       position: absolute;
+       top: 35px;
+       left: 30px;
+       font-size: 24px;
+       transform: none;
+     }
+
+     #hero {
+       padding-top: 100px;
+       min-height: 1200px;
+     }
+
+    .hero-content {
+     flex-direction: column;
+     padding: 20px 0;
+    }
+
+  .hero-text {
+     position: static;
+     top: auto;
+     margin-bottom: 50px;
+     text-align: center;
+   }
+
+   .hero-text h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-image img {
+        width: 95%;
+        height: auto;
+        position: relative;
+        left: 0;
+    }
+
+    .gallery-row {
+      flex-direction: column;
+    }
+
+    .gallery-item {
+      flex: 0 0 100%; /* Take up the full width */
+    }
+
+    .about-section {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .about-image, .about-text {
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .about-text {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .bio-images {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+
+    .image-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+    }
+
+    .about-page .image-row img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 35px; /* Optional: add space between images */
+      padding: 0;
+    }
+}
+
+.about-section {
+  display: flex;
+  padding-top: 50px;
+  margin-top: 35px;
+  padding-bottom: 0px;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  max-width: 90%;
+  margin: 20px;
+  height: auto;
+  margin-top: 60px;
+}
+
+.about-text {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+  margin-top: 40px;
+  max-width: 700px;
+}
+
+.about-text h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.about-text h2 {
+  font-size: 1.75em;
+  font-weight: normal;
+}
+
+.about-title {
+  font-size: 2.5em; /* Adjust this to change the size of the title */
+  font-weight: 600;
+}
+
+.about-subtitle {
+  font-size: 1.75em; /* Adjust this to change the size of the subtitle */
+}
+
+.about-body-text {
+  font-size: 1.2em; /* Adjust this to change the size of the body text */
+}
+
+.bio-images {
+  padding-top: 0px;
+  padding-bottom: 90px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0; /* Adjust the margin as needed */
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.image-row img {
+  width: 18%; /* Adjust the width to fit five images in a row */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images are square */
+}
+
+.about-page .subscribe-section {
+  padding-top: 1px;
+}
