@@ -116,7 +116,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 100px 50px 40px 50px;
+    padding: 40px 50px 40px 50px;
     background-color: #769172;
     height: 135vh;
 }
