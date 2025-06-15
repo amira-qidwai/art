@@ -118,7 +118,7 @@ header {
     justify-content: space-between;
     padding: 40px 50px 40px 50px;
     background-color: #769172;
-    height: 100vh;
+    height: 90vh;
 }
 
 .hero-content {
@@ -131,7 +131,8 @@ header {
 .hero-text {
     flex: 1;
     position: relative;
-    top: -100px;
+    top: 0px;
+    margin-top: -40px;
     max-width: 600px;
     text-align: center;
     margin-right: 2%
