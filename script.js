@@ -1,3 +1,4 @@
+
 // script.js
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -14,5 +15,18 @@ document.addEventListener("DOMContentLoaded", () => {
     if (navMenu.classList.contains("active")) {
       toggleMenu();
     }
+  });
+});
+
+window.addEventListener("load", () => {
+  const gallery = document.querySelector(".gallery");
+  const rowHeight = parseInt(window.getComputedStyle(gallery).getPropertyValue("grid-auto-rows"));
+  const rowGap = parseInt(window.getComputedStyle(gallery).getPropertyValue("gap"));
+
+  gallery.querySelectorAll("img").forEach(img => {
+    img.addEventListener("load", () => {
+      const rowSpan = Math.ceil((img.offsetHeight + rowGap) / (rowHeight + rowGap));
+      img.style.gridRowEnd = `span ${rowSpan}`;
+    });
   });
 });
