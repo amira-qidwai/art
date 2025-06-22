@@ -30,3 +30,7 @@ window.addEventListener("load", () => {
     });
   });
 });
+
+function changeImage(src) {
+  document.getElementById('currentImage').src = src;
+}
