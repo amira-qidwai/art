@@ -34,3 +34,11 @@ window.addEventListener("load", () => {
 function changeImage(src) {
   document.getElementById('currentImage').src = src;
 }
+
+
+function closeBanner() {
+  const banner = document.getElementById('announcement-banner');
+  if (banner) {
+    banner.style.display = 'none';
+  }
+}

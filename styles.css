@@ -674,6 +674,18 @@ footer {
   z-index: 1000;
 }
 
+.close-banner {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #769171;
+  cursor: pointer;
+}
+
+
 .shoptabs {
   column-count: 3;
   column-gap: 16px;
@@ -694,28 +706,13 @@ footer {
   display: block;
 }
 
-.breadcrumb {
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.breadcrumb a {
-  color: #555;
-  text-decoration: none;
-}
-
-.breadcrumb a:hover {
-  text-decoration: underline;
-}
-
-
 .product-page {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   width: 100%;
   max-width: none;
-  padding: 80px 50px 50px 50px;;
+  padding: 10px 50px 50px 50px;;
   box-sizing: border-box;
   background-color: #769172;
 }
@@ -747,10 +744,35 @@ footer {
 }
 
 .thumbnail-gallery img:hover {
-  border-color: #333;
+  border-color: #feedde;
 }
 
 .right-column {
   flex: 1;
   min-width: 300px;
+}
+
+.breadcrumb {
+  background-color: #769172; /* Replace with your site's green */
+  padding: 120px 50px;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.breadcrumb a {
+  color: #095944;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+  color: #feedde;
+  text-decoration: none;
+}
+
+.breadcrumb-separator {
+  color: #095944;
+  margin: 0 5px;
 }
