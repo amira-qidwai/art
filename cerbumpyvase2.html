@@ -7,7 +7,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="styles.css">
-      <title>Contact Amira Qidwai</title>
+      <title>Amira Qidwai</title>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
 
@@ -50,35 +50,31 @@
         </nav>
       </div>
     </header>
-    <div class="announcement-banner">
-      50% of profits from all sales are donated to the Palestine Children's Relief Fund
-    </div>
 
-    <main class="shop-sections">
-      <a href="ceramics.html" class="shop-link">
-        <div class="shop-item">
-          <img src="assets/ShopTabCeramics.jpg" alt="Ceramics">
-          <div class="overlay-text">Ceramics</div>
+    <main>
+      <div class="breadcrumb">
+        <a href="shop.html">Shop</a> <span class="breadcrumb-separator">&gt;</span>
+        <a href="ceramics.html">Ceramics</a> <span class="breadcrumb-separator">&gt;</span>
+        Curvy Vase
+      </div>
+      <div class="product-page">
+        <div class="left-column">
+          <img id="currentImage" src="assets/Ceramics/ForSale/Cer_BumpyVases7.JPEG" alt="Main Artwork">
+          <div class="thumbnail-gallery">
+            <img src="assets/Ceramics/ForSale/Cer_BumpyVases7.JPEG" onclick="changeImage(this.src)" alt="Thumbnail 1">
+            <img src="assets/Ceramics/ForSale/Cer_BumpyVases6.JPEG" onclick="changeImage(this.src)" alt="Thumbnail 1">
+            <img src="assets/Ceramics/ForSale/Cer_BumpyVases5.JPEG" onclick="changeImage(this.src)" alt="Thumbnail 1">
+          </div>
         </div>
-      </a>
-      <a href="advocacy.html" class="shop-link">
-        <div class="shop-item">
-          <img src="assets/ShopTabAdvocacy.jpg" alt="Advocacy">
-          <div class="overlay-text">Advocacy</div>
+        <div class="right-column">
+          <h1>Curvy Vase</h1>
+          <h2>For Sale</h2>
+          <p><strong>Medium:</strong> Stoneware with Glaze</p>
+          <p><strong>Price:</strong> $20.00</p>
+          <p><strong>Dimensions:</strong> 1 </p>
+          <p><strong>Description:</strong> This curvy vase features a mix of dark blue and green glazes on the ouside and a lighter green glaze on the inside.</p>
         </div>
-      </a>
-      <a href="embroidery.html" class="shop-link">
-        <div class="shop-item">
-          <img src="assets/ShopTabEmbroidery.jpg" alt="Embroidery">
-          <div class="overlay-text">Embroidery</div>
-        </div>
-      </a>
-      <a href="paintings.html" class="shop-link">
-        <div class="shop-item">
-          <img src="assets/ShopTabPainting.jpg" alt="Paintings">
-          <div class="overlay-text">Paintings</div>
-        </div>
-      </a>
+      </div>
     </main>
     <section class="subscribe-section">
       <h2 class="section-heading">Subscribe</h2>
@@ -88,9 +84,11 @@
         <button type="submit">Sign Up</button>
       </form>
     </section>
+
     <footer>
-      <p> &copy; Amira Qidwai 2025. All rights reserved.</p>
+      <p> &copy; Amira Qidwai 2024. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 
   </body>
