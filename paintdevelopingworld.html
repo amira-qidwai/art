@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+      <link rel="icon" href="favicon.png" type="image/png">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <title>Amira Qidwai</title>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="shop-page">
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">Amira Qidwai</a>
+        </div>
+        <div class="hamburger-menu" id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.instagram.com/amiraqidwai/" target="_blank">
+                <img src="assets/instagram.png" alt="Instagram">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/amira-qidwai-a956a183/" target="_blank">
+                <img src="assets/linkedin.png" alt="LinkedIn">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com/amiraqidwai/" target="_blank">
+                <img src="assets/pinterest.png" alt="Pinterest">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="breadcrumb">
+        <a href="shop.html">Shop</a> <span class="breadcrumb-separator">&gt;</span>
+        <a href="ceramics.html">Ceramics</a> <span class="breadcrumb-separator">&gt;</span>
+        The Developing World
+      </div>
+      <div class="product-page">
+        <div class="left-column">
+          <img id="currentImage" src="assets/Painting/ForSale/Paint_DevelopingWorld.JPEG" alt="Main Artwork">
+          <div class="thumbnail-gallery">
+            <img src="assets/Painting/ForSale/Paint_DevelopingWorld.JPEG" onclick="changeImage(this.src)" alt="Thumbnail 1">
+          </div>
+        </div>
+        <div class="right-column">
+          <h1>The Developing World</h1>
+          <h2>For Sale</h2>
+          <p><strong>Medium:</strong> Acrylic Paint on Canvas</p>
+          <p><strong>Price:</strong> $56.00</p>
+          <p><strong>Dimensions:</strong> </p>
+          <p><strong>Description:</strong> </p>
+          <button id="claimButton" class="claim-button">Claim This Piece!</button>
+          <div id="claimModal" class="modal">
+            <div class="modal-content">
+              <span class="close-button">&times;</span>
+              <p>
+                To purchase this artwork, please email Amira Qidwai claiming the artwork you are interested in.
+                Please discuss your preferred payment method (Venmo, PayPal, Apple Cash, or Cash) and how you would like to pick up or ship the item.
+              </p>
+              <a href="mailto:amira@qidwai.net?subject=Claiming Artwork" class="understand-button">I understand</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="subscribe-section">
+      <h2 class="section-heading">Subscribe</h2>
+      <p>Sign up with your email address to recieve news and updates from Amira Qidwai.</p>
+      <form action="#" method="post">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+
+    <footer>
+      <p> &copy; Amira Qidwai 2024. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
