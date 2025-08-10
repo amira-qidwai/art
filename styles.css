@@ -838,3 +838,228 @@ footer {
 .understand-button:hover {
   background-color: #063f32;
 }
+
+.article-header {
+  background-color: #769172;
+  padding-left: 40px;
+  padding-top: 200px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.article-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 2000px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.article-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  flex: 1.25;
+}
+
+.article-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  margin: 0;
+  flex: 1.5;
+  text-align: left;
+  padding: 0px 0px 0px 100px;
+}
+
+.timeline-section {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.timeline-entry {
+  display: flex;
+  align-items: center;
+  background-color: #769172;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.timeline-year {
+  flex-basis: 10%;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.timeline-text {
+  flex-basis: 90%;
+  font-size: 1.2em;
+  line-height: 1.6;
+
+}
+
+.timeline-image-container {
+  width: 100%;
+  max-width: 2000px;
+  padding: 0px 30px 20px 30px;
+  overflow: hidden;
+}
+
+
+.timeline-image {
+  width: 100%;
+  max-width: 1275px; /* Adjust this value as needed */
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+
+.article-image-pair-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto 40px auto;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 0 20px; /* Adds horizontal padding to prevent edge overflow */
+}
+
+.article-image {
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  width: 100%; /* Ensures image doesn't overflow its container */
+}
+
+.portrait {
+  flex: 1;
+  min-width: 300px; /* Prevents shrinking too much on small screens */
+}
+
+.landscape {
+  flex: 2;
+  min-width: 300px;
+}
+
+.photo-duo-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Vertically centers the images */
+  gap: 20px;
+  background-color: #769172;
+  padding: 60px 20px;
+  max-width: 2000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.photo-small {
+  width: 30%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+  margin-right: 100px;
+}
+
+.photo-large {
+  width: 50%;
+  height: 750px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Add spacing between major sections */
+.timeline-section,
+.timeline-image-container,
+.article-image-pair-container,
+.photo-duo-centered {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* Add spacing between header and title container */
+.article-header {
+  margin-bottom: 60px; /* Adds space below the header */
+}
+
+/* Add spacing between timeline entries */
+.timeline-entry {
+  margin-bottom: 40px; /* Increase spacing between entries */
+}
+
+/* Optional: spacing utility classes */
+.spacer-sm {
+  height: 20px;
+}
+
+.spacer-md {
+  height: 40px;
+}
+
+.spacer-lg {
+  height: 60px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #769172;
+}
+
+.top-image-container {
+  padding-top: 0px; /* Reduce top padding */
+  margin-top: 0px; /* Optional: add a small margin if needed */
+}
+
+.video-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 20px;
+  background-color: #769172;
+  max-width: 2000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.video-item {
+  width: 30%;
+  text-align: center;
+}
+
+.portrait-video {
+  width: 100%;
+  max-height: 600px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+.video-link {
+  display: block;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #095944; /* Dark green */
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-top: 30px;
+}
+
+.video-link:hover {
+  color: #feedde;
+}
