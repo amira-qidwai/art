@@ -549,28 +549,159 @@ footer {
   font-size: 1.2em; /* Adjust this to change the size of the body text */
 }
 
-.bio-images {
-  padding-top: 0px;
-  padding-bottom: 90px;
-}
-
-.image-row {
-  display: flex;
-  justify-content: space-between;
-  margin: 0px 0; /* Adjust the margin as needed */
-  padding-left: 35px;
-  padding-right: 35px;
-}
-
-.image-row img {
-  width: 18%; /* Adjust the width to fit five images in a row */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure images are square */
-}
-
 .about-page .subscribe-section {
   padding-top: 1px;
 }
+
+.about-site-section {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 20px 40px;
+  background-color: #769172;
+}
+
+.section-title h1 {
+  font-size: 3em;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+
+.site-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px; /* Reduce space between text and image */
+  max-width: 2000px; /* Center the content within a narrower width */
+  margin: 0 auto; /* Horizontally center the container */
+  flex-wrap: wrap;
+}
+
+
+.site-text {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: left;
+  margin-left: 30px;
+}
+
+
+.site-image {
+  flex: 1 1 48%;
+  max-width: 48%;
+  padding: 20px;
+  margin-right: 50px; /* Adds space between image and right edge */
+}
+
+
+.site-image img {
+  width: 105%; /* Scales image beyond container */
+  height: auto;
+  object-fit: contain;
+  transform: scale(1.05); /* Optional: visually enlarges image */
+}
+
+
+.section-heading {
+  margin-bottom: 0px; /* Reduces space below title */
+  margin-top: 30px;
+  max-width: 1000px;
+  margin-left: 40px;
+}
+
+.section-heading span {
+  font-size: 2em;
+  font-weight: 700;
+  display: block;
+  color: #feedde;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.artist-heading {
+  margin-bottom: -100px; /* Pulls title closer to content */
+  max-width: 1000px;
+  margin-left: 60px;
+}
+
+.artist-heading span {
+  font-size: 2em;
+  font-weight: 700;
+  display: block;
+  color: #feedde;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.about-body-text a {
+  color: #095944;
+  text-decoration: none;
+  font-weight: 500; /* Optional: makes the link slightly stand out */
+}
+
+.about-body-text a:hover {
+  text-decoration: underline; /* Optional: adds underline on hover */
+}
+
+
+/* For tablets and smaller screens */
+@media (max-width: 900px) {
+  .site-content,
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .site-text,
+  .site-image,
+  .about-text,
+  .about-image {
+    max-width: 100%;
+    flex: none;
+    padding: 0;
+  }
+
+  .site-image img {
+    transform: scale(1); /* Remove scaling on small screens */
+    width: 100%;
+    max-height: none;
+  }
+
+  .section-heading {
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .section-heading span {
+    font-size: 2.2em;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 600px) {
+  .section-heading span {
+    font-size: 1.8em;
+  }
+
+  .site-text,
+  .about-text {
+    font-size: 1em;
+  }
+
+  .site-content,
+  .about-section {
+    gap: 15px;
+  }
+}
+
 
 .gallery {
   column-count: 5;
