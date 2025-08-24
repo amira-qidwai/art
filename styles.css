@@ -758,7 +758,6 @@ footer {
 .shop-item {
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
   aspect-ratio: 1.45 / 1;
 }
 
@@ -836,7 +835,6 @@ footer {
 .shoptabs img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
   display: block;
 }
 
