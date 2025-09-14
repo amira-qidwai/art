@@ -1027,7 +1027,7 @@ footer {
 
 .timeline-year {
   flex-basis: 10%;
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: 600;
 }
 
@@ -1194,4 +1194,110 @@ html, body {
 
 .video-link:hover {
   color: #feedde;
+}
+
+/* Responsive styles for tablets and smaller screens */
+@media (max-width: 1024px) {
+  .article-title {
+    font-size: 40px;
+  }
+
+  .article-subtitle {
+    font-size: 18px;
+    padding-left: 40px;
+  }
+
+  .photo-small,
+  .photo-large,
+  .video-item {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .video-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-entry {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .timeline-year {
+    flex-basis: 100%;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+  .timeline-text {
+    flex-basis: 100%;
+    font-size: 1.2em;
+  }
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 600px) {
+  .article-header {
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+  }
+
+  .article-title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .article-subtitle {
+    font-size: 16px;
+    padding-left: 20px;
+    text-align: center;
+  }
+
+  .photo-duo-centered {
+    padding: 40px 10px;
+  }
+
+  .photo-small {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-right: 0;
+  }
+
+
+  .photo-large {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-right: 0;
+  }
+
+  .article-image {
+    height: auto;
+  }
+
+  .portrait,
+  .landscape {
+    flex: 1 1 100%;
+    min-width: unset;
+  }
+
+  .video-link {
+    font-size: 18px;
+  }
+
+  .timeline-entry {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .timeline-year {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+
+  .timeline-text {
+    font-size: 1.2em;
+  }
 }
