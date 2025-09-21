@@ -838,6 +838,23 @@ footer {
   display: block;
 }
 
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .shop-sections {
+    grid-template-columns: 1fr;
+  }
+
+  .overlay-text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-text {
+    font-size: 1.2rem;
+  }
+}
+
 .product-page {
   display: flex;
   flex-wrap: wrap;
