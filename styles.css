@@ -1005,6 +1005,10 @@ footer {
   background-color: #063f32;
 }
 
+.ceramics-growth-article-page {
+  color: #095944
+}
+
 .article-header {
   background-color: #769172;
   padding-left: 40px;
@@ -1027,7 +1031,7 @@ footer {
   font-family: 'Poppins', sans-serif;
   font-size: 60px;
   font-weight: 700;
-  color: white;
+  color: #feedde;
   margin: 0;
   flex: 1.25;
 }
@@ -1036,7 +1040,7 @@ footer {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 500;
-  color: white;
+  color: #feedde;
   margin: 0;
   flex: 1.5;
   text-align: left;
@@ -1053,7 +1057,7 @@ footer {
   display: flex;
   align-items: center;
   background-color: #769172;
-  color: white;
+  color: #feedde;
   padding: 20px;
   margin-bottom: 20px;
   text-align: left;
@@ -1144,6 +1148,47 @@ footer {
   object-fit: cover;
   display: block;
 }
+
+.photo-duo-centered-landscapes {
+  width: 100%;
+  background-color: #769172;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  padding-left: 70px;
+}
+
+/* This box forces centering no matter what */
+.duo-center-force {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Your exact sizes preserved */
+.duo-img-large {
+  width: 55%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.duo-img-small {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.duo-link {
+  text-decoration: none;
+  display: block;
+}
+
+
 
 /* Add spacing between major sections */
 .timeline-section,
@@ -1248,9 +1293,32 @@ html, body {
     margin-right: 0;
   }
 
+  .landscape-large,
+  .landscape-small {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
   .video-section {
     flex-direction: column;
     align-items: center;
+  }
+
+  .photo-duo-centered-landscapes {
+    padding-left: 0; /* remove your manual centering padding */
+  }
+
+  .duo-center-force {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .duo-img-large,
+  .duo-img-small {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
   .timeline-entry {
@@ -1299,12 +1367,27 @@ html, body {
     margin-right: 0;
   }
 
-
   .photo-large {
     width: 100%;
     height: auto;
     object-fit: contain;
     margin-right: 0;
+  }
+
+  .photo-duo-centered-landscapes {
+    padding-left: 0; /* remove your manual centering padding */
+  }
+
+  .duo-center-force {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .duo-img-large,
+  .duo-img-small {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
   .article-image {
